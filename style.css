@@ -6,7 +6,7 @@ body {
 #home {
   background: 
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('3.png') fixed; /* ganti sesuai nama file kamu */
+    url('assets/3.png') fixed; /* ganti sesuai nama file kamu */
   background-size: cover;
   background-position: relative;
   background-repeat: no-repeat;
@@ -121,7 +121,9 @@ section {
   border: slategrey 2px solid;
 }
 
-/* Responsif untuk mobile */
+/* Responsif untuk mobile buat versi 
+hp 560px
+tab 768px x 1080px*/
 @media (max-width: 768px) {
   .display-4 {
     font-size: 2.2rem;
@@ -135,7 +137,7 @@ section {
 /* OUR PARTNER SECTION – Background + Overlay */
 .partner-section {
   background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.7)),
-              url('3.png') center/cover no-repeat fixed;
+              url('assets/3.png') center/cover no-repeat fixed;
   min-height: 90vh;
   position: relative;
   border-radius: 0px;
