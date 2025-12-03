@@ -6,7 +6,7 @@ body {
 #home {
   background: 
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('download.jpg'); /* ganti sesuai nama file kamu */
+    url('3.png'); /* ganti sesuai nama file kamu */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,10 +52,22 @@ body {
   padding: 20px 0; /* bikin lebih tinggi / lebar */
   backdrop-filter: blur(0px); /* optional: bisa bikin blur*/
   box-shadow: none; /* hilangin bayangan */
-  border-bottom: 4px solid rgba(255, 255, 255, 0.4);
   margin-left: 70px;
   margin-right: 70px;
   border-radius: 10px;
+  margin-top: 10px;
+}
+
+.custom-navbar::after {
+  content: "";
+  position: fixed;
+  bottom: 10px;        /* BIAR ADA SISA NAVBAR DI BAWAH GARIS */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;          /* garis lebih pendek → aesthetic */
+  height: 3px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
 }
 
 /* Biar link warna tetap putih */
@@ -75,4 +87,81 @@ body {
   text-align: justify;
 }
 
+/* custom.css */
+section {
+  background-color: #e8e8e8;
+  border-radius: 15px;
+  overflow: hidden;
+}
 
+.program-card {
+  transition: transform 0.3s;
+  background: rgba(0,0,0,0) !important;
+}
+
+.program-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0px 0px rgba(0,0,0,0) !important;
+}
+
+/* Tombol DONATE NOW */
+.btn-donate {
+  background-color: #00d66b;
+  color: white; 
+  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-donate:hover {
+  background-color: #00b856;
+  color: white;
+  border: slategrey 2px solid;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2.2rem;
+  }
+  .card {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+
+/* OUR PARTNER SECTION – Background + Overlay */
+.partner-section {
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.7)),
+              url('3.png') center/cover no-repeat fixed;
+  min-height: 90vh;
+  position: relative;
+  border-radius: 0px;
+}
+
+/* Supaya logo tetap putih & glowing */
+.partner-logo {
+  max-height: 110px;
+  width: auto;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.6));
+  transition: all 0.3s ease;
+}
+.partner-logo:hover {
+  transform: translateY(-10px) scale(1.1)
+}
+
+/* Khusus layout 8 + 7 */
+.col-lg-1_5 { flex: 0 0 11.5%; max-width: 11.5%; }           /* 8 logo atas */
+.offset-lg-0_5 { margin-left: 6%; }                         /* geser baris bawah biar pas tengah */
+
+/* Responsif mobile */
+@media (max-width: 992px) {
+  .col-lg-1_5 { flex: 0 0 20%; max-width: 20%; }
+  .offset-lg-0_5 { margin-left: 0; }
+}
+@media (max-width: 576px) {
+  .col-3 { flex: 0 0 33.333%; max-width: 33.333%; }
+  .partner-logo { max-height: 80px; }
+}

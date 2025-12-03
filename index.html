@@ -1,154 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Scroll Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - Scroll Website</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+      <div class="container">
+        <img src="santribuminav.png" width="200" alt="logo" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
-    <div class="container">
-      <a class="navbar-brand" href="#home">SANTRIBUMI</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">GREEN CAMPAIGN</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">PROGRAM</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">DONATE</a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">GREEN CAMPAIGN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">PROGRAM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">DONATE</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
-      <HR>
-      </HR>
-    </div>
-  </nav>
-
-  <!-- Section 1: Home -->
-  <section id="home" class="d-flex align-items-center justify-content-center text-center text-white min-vh-100">
-    <div class="content-container">
-      <h4 class="fw-bold mb-2">Welcome to</h4>
-      <h1 class="fw-bold main-title">SANTRIBUMI</h1>
-      <h3 class="fw-bold sub-title">GREEN SYNDICATE</h3>
-    </div>
-  </section>
-
-  <!-- Section 2: About -->
-  <section id="about" class="about-section py-5">
-    <div class="container py-5">
-      <div class="row align-items-center">
-
-        <!-- LEFT CONTENT -->
-        <div class="col-md-6 mb-4">
-          <h1 class="about-title text-success fw-bold text-center" style="font-size: 50px;">Aksi<br>SANTRI BUMI<br>2023</h1>
-          <p class="about-sub text-success fw-bold text-center" style="font-size: 20px;">
-            “Menanam Kebaikan, Menebar Kemanfaatan”
-          </p>
-
-          <p class="about-text mt-4">
-            “Santri Bumi 2023: Menanam Kebaikan, Menebar Kemanfaatan” yang berlangsung pada hari
-            Sabtu, 25 November 2023. Acara ini merupakan hasil kolaborasi antara Mujtama Madani Institute
-            dengan Direktorat Rehabilitasi Perairan Darat dan Mangrove Kementrian Lingkungan Hidup dan Kehutanan,
-            BPDAS Citarum Ciliwung, Dinas Lingkungan Hidup Provinsi Banten, dan Kampung Bahari Nusantara.
-          </p>
-
-          <button type="button" class="btn btn-success">READ MORE</button>
-        </div>
-
-        <!-- RIGHT IMAGE -->
-        <div class="col-md-6">
-          <img src="download (1).jfif" alt="aksi santribumi" class="img-fluid rounded shadow-sm">
-          <p class="image-caption mt-2 text-muted">AKSI SANTRIBUMI (2023)</p>
-        </div>
-
+    <!-- Section 1: Home -->
+    <section
+      id="home"
+      class="d-flex align-items-center justify-content-center text-center text-white min-vh-100"
+      style="border-radius: 0px"
+    >
+      <div class="content-container">
+        <img src="headline.png" height="450" alt="" />
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- Section 2: AksiSantri2023 -->
+    <section id="about" class="about-section pt-5">
+      <div class="container py-4">
+        <div class="row align-items-center">
+          <!-- LEFT CONTENT -->
+          <div class="col-md-6 mb-4">
+            <img
+              src="aksisantribumi2023.png"
+              width="375"
+              alt=""
+              style="margin-left: 100px"
+            />
 
-  <!-- Section 3: Skills -->
-  <section id="about" class="about-section py-5">
-    <div class="container py-5">
-      <div class="row align-items-center">
+            <p class="about-text mt-4">
+              “Santri Bumi 2023: Menanam Kebaikan, Menebar Kemanfaatan” yang
+              berlangsung pada hari Sabtu, 25 November 2023. Acara ini merupakan
+              hasil kolaborasi antara Mujtama Madani Institute dengan Direktorat
+              Rehabilitasi Perairan Darat dan Mangrove Kementrian Lingkungan
+              Hidup dan Kehutanan, BPDAS Citarum Ciliwung, Dinas Lingkungan
+              Hidup Provinsi Banten, dan Kampung Bahari Nusantara.
+            </p>
 
-        <div class="col-md-6">
-          <img src="Dunia dalam Tetesan Air.jfif" alt="aksi santribumi" class="img-fluid rounded shadow-sm">
-          <p class="image-caption mt-2 text-muted">AKSI SANTRIBUMI (2023)</p>
-        </div>
-
-        <div class="col-md-6 mb-4">
-          <h1 class="about-title text-success fw-bold text-center " style="font-size: 85px">ECOSOFREN</h1>
-          <p class="about-sub text-success fw-bold text-center" style="font-size: 23px;">
-            “Menanam Kebaikan, Menebar Kemanfaatan”
-          </p>
-
-          <p class="about-text mt-4 mx-4">
-            EKOSOFREN adalah konsep pendidikan inovatif yang mengintegrasikan tiga pilar utama: ekologi, sosial kebudayaan, dan enterpreneurship. Nama "EKOSOFREN" merupakan akronim dari Ekologi, Sosial Kebudayaan, dan Entrepreneur, yang mencerminkan fokus utama dari program pendidikan ini. Konsep ini dirancang untuk menciptakan sistem pendidikan holistik yang tidak hanya mengedepankan pengetahuan akademis tetapi juga pembentukan karakter dan keterampilan praktis yang relevan dengan tantangan dunia modern.
-          </p>
-
-          <div class="text-end mx-4">
-          <button type="button" class="btn btn-success">READ MORE</button>
+            <button
+              type="button"
+              class="btn btn-success"
+              style="border-radius: 20px"
+            >
+              READ MORE
+            </button>
           </div>
-        </div>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 4: Projects -->
-  <section id="projects" class="section bg-light">
-    <div class="container">
-      <h2 class="mb-4 fw-bold">Projects</h2>
-
-      <div class="row">
-        <div class="col-md-4">
-          <div class="project-card p-3">
-            <h5>Project 1</h5>
-            <p>Simple website using HTML & Bootstrap.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="project-card p-3">
-            <h5>Project 2</h5>
-            <p>Mobile App UI Design using Figma.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="project-card p-3">
-            <h5>Project 3</h5>
-            <p>Backend service using PHP Native.</p>
+          <!-- RIGHT IMAGE -->
+          <div class="col-md-6">
+            <img
+              src="download (1).jfif"
+              alt="aksi santribumi"
+              class="img-fluid rounded shadow-sm"
+            />
+            <p class="image-caption mt-2 text-muted">AKSI SANTRIBUMI (2023)</p>
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- Section 3: Ecosofren -->
+    <section id="about" class="about-section py-3">
+      <div class="container py-3">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img
+              src="1.png"
+              alt="aksi santribumi"
+              class="img-fluid rounded shadow-sm"
+            />
+            <p class="image-caption mt-2 text-muted">AKSI SANTRIBUMI (2023)</p>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <img
+              src="ecosofren.png"
+              width="500"
+              style="margin-left: 20px"
+              alt=""
+            />
+
+            <p class="about-text mt-4 mx-4">
+              EKOSOFREN adalah konsep pendidikan inovatif yang mengintegrasikan
+              tiga pilar utama: ekologi, sosial kebudayaan, dan
+              enterpreneurship. Nama "EKOSOFREN" merupakan akronim dari Ekologi,
+              Sosial Kebudayaan, dan Entrepreneur, yang mencerminkan fokus utama
+              dari program pendidikan ini. Konsep ini dirancang untuk
+              menciptakan sistem pendidikan holistik yang tidak hanya
+              mengedepankan pengetahuan akademis tetapi juga pembentukan
+              karakter dan keterampilan praktis yang relevan dengan tantangan
+              dunia modern.
+            </p>
+
+            <div class="text-end mx-4">
+              <button
+                type="button"
+                class="btn btn-success"
+                style="border-radius: 20px"
+              >
+                READ MORE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION DONASI -->
+    <section class="py-2">
+      <div class="container">
+        <!-- Header -->
+        <div class="text-center mb-5">
+          <p class="text-secondary fs-5 mb-1" style="text-align: left">
+            Help us so we can
+          </p>
+          <h1 class="fw-bold" style="text-align: left">
+            Plant Goodness and Spread Usefulness
+          </h1>
+        </div>
+
+        <!-- 4 Program Cards -->
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-5 justify-content-center"
+        >
+          <!-- DEMIMASA -->
+          <div class="col">
+            <div
+              class="card h-100 shadow-sm border-0 p-4 program-card"
+              style="align-items: start"
+            >
+              <img
+                src="demimasa.png"
+                class="card-img-top mb-3"
+                alt="DEMIMASA"
+                style="height: 150px; object-fit: contain"
+              />
+              <div class="card-body px-0">
+                <p class="card-text lh-lg" style="font-size: 12px">
+                  <strong>Program Diseminasi Mandiri Sampah</strong><br />
+                  Diseminasi Mandiri Sampah (DEMIMASA) adalah proyek inovatif
+                  yang bertujuan untuk mengedukasi dan memberdayakan masyarakat
+                  dalam pengelolaan sampah secara mandiri.
+                </p>
+                <a href="#" class="btn btn-donate mt-2">DONATE NOW</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- BERKAH -->
+          <div class="col">
+            <div
+              class="card h-100 shadow-sm border-0 p-4 program-card"
+              style="align-items: start"
+            >
+              <img
+                src="berkah.png"
+                class="card-img-top mb-3"
+                alt="BERKAH"
+                style="height: 150px; object-fit: contain"
+              />
+              <div class="card-body px-0">
+                <p class="card-text lh-lg" style="font-size: 12px">
+                  <strong>Program Bersih Kali Bebas Sampah</strong><br />
+                  Membersihkan sungai dan kali dari sampah plastik serta
+                  meningkatkan kesadaran masyarakat sekitar.
+                </p>
+                <a href="#" class="btn btn-donate mt-3">DONATE NOW</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- AKSI SANTRIBUMI -->
+          <div class="col">
+            <div
+              class="card h-100 shadow-sm border-0 p-4 program-card"
+              style="align-items: start"
+            >
+              <img
+                src="aksisantribumi.png"
+                class="card-img-top mb-3"
+                alt="AKSI SANTRIBUMI"
+                style="height: 150px; object-fit: contain"
+              />
+              <div class="card-body px-0">
+                <p class="card-text lh-lg" style="font-size: 12px">
+                  <strong>Program Penghijauan Lingkungan</strong><br />
+                  Menanam pohon dan menciptakan lingkungan yang lebih hijau
+                  serta bermanfaat bagi generasi mendatang.
+                </p>
+                <a href="#" class="btn btn-donate mt-3">DONATE NOW</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- INSAN -->
+          <div class="col">
+            <div
+              class="card h-100 shadow-sm border-0 p-4 program-card"
+              style="align-items: start"
+            >
+              <img
+                src="insan.png"
+                class="card-img-top mb-3"
+                alt="Insan"
+                style="height: 150px; object-fit: contain"
+              />
+              <div class="card-body px-0">
+                <p class="card-text lh-lg" style="font-size: 12px">
+                  <strong>Instalasi Air Minum Pesantren</strong><br />
+                  Membantu pesantren mendapatkan akses air bersih melalui
+                  instalasi yang layak dan berkelanjutan.
+                </p>
+                <a href="#" class="btn btn-donate mt-3">DONATE NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Contact -->
+    <!-- SECTION OUR PARTNER -->
+    <section class="partner-section position-relative py-5 overflow-hidden">
+      <div class="container position-relative z-3">
+        <!-- Judul -->
+        <h2 class="text-white text-center fw-bold mb-5 display-3 partner-title">
+          OUR PARTNER
+        </h2>
+
+        <!-- Daftar Logo Partner -->
+        <div class="row justify-content-center align-items-end mb-4 g-4">
+      <div class="col-3 col-sm-3 col-lg-1_5"><img src="ijobintang.png" class="img-fluid partner-logo" alt=""></div>
+      <div class="col-3 col-sm-3 col-lg-1_5"><img src="alhasaniyah.png" class="img-fluid partner-logo" alt=""></div>
+      <div class="col-3 col-sm-3 col-lg-1_5"><img src="ponpesteluknaga.png" class="img-fluid partner-logo" alt=""></div>
+      <div class="col-3 col-sm-3 col-lg-1_5"><img src="ponpesmujtama.png" class="img-fluid partner-logo" alt=""></div>
+      <div class="col-3 col-sm-3 col-lg-1_5"><img src="nadhlatululama.png" class="img-fluid partner-logo" alt=""></div>
+      <div class="col-3 col-sm-3 col-lg-1_5"><img src="perhutani.png" class="img-fluid partner-logo" alt=""></div>
+      <div class="col-3 col-sm-3 col-lg-1_5"><img src="mangroves.png" class="img-fluid partner-logo" alt=""></div>
+      <div class="col-3 col-sm-3 col-lg-1_5"><img src="satyakarya.png" class="img-fluid partner-logo" alt=""></div>
     </div>
-  </section>
-
-  <!-- Section 5: Contact -->
-  <section id="contact" class="section text-white d-flex justify-content-center align-items-center">
-    <div class="text-center">
-      <h2 class="fw-bold">Contact Me</h2>
-      <p>Let's create something cool together ✨</p>
-      <p>Email: yourname@gmail.com</p>
+        
+    <div class="row justify-content-center align-items-start g-4">
+      <div class="col-3 col-sm-3 col-lg-1_5 offset-lg-0_5"><img src="kemenag.png"  class="img-fluid partner-logo" alt=""></div>
+      <div class="col-3 col-sm-3 col-lg-1_5"><img src="gusdurian.png" class="img-fluid partner-logo" alt=""></div>
+      <div class="col-3 col-sm-3 col-lg-1_5"><img src="alumni.png" class="img-fluid partner-logo" alt=""></div>
+      <div class="col-3 col-sm-3 col-lg-1_5"><img src="pramuka.png" class="img-fluid partner-logo" alt=""></div>
+      <div class="col-3 col-sm-3 col-lg-1_5"><img src="farmasi.png" class="img-fluid partner-logo" alt=""></div>
+      <div class="col-3 col-sm-3 col-lg-1_5"><img src="lpn.png" class="img-fluid partner-logo" alt=""></div>
+      <div class="col-3 col-sm-3 col-lg-1_5"><img src="sun.png" class="img-fluid partner-logo" alt=""></div>
     </div>
-  </section>
+      </div>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
